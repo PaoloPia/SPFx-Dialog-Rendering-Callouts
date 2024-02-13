@@ -1,0 +1,21 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "16.18.1",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.12.0"
+    },
+    "version": "1.18.2",
+    "libraryName": "sp-fx-dialog-rendering-callouts",
+    "libraryId": "76ba92ca-f8c4-498b-94e8-70ec4fb5b064",
+    "environment": "spo",
+    "packageManager": "npm",
+    "solutionName": "sp-fx-dialog-rendering-callouts",
+    "solutionShortDescription": "sp-fx-dialog-rendering-callouts description",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart"
+  }
+}
