@@ -1,7 +1,8 @@
 import * as React from 'react';
 import styles from './PlayWithDialog.module.scss';
 import type { IPlayWithDialogProps } from './IPlayWithDialogProps';
-import { DefaultButton } from '@fluentui/react';import TestDialog from './TestDialog/TestDialog';
+import { DefaultButton } from '@fluentui/react';
+import TestDialogManager from './TestDialog/TestDialog';
 
 export default class PlayWithDialog extends React.Component<IPlayWithDialogProps, {}> {
   public render(): React.ReactElement<IPlayWithDialogProps> {
@@ -19,7 +20,7 @@ export default class PlayWithDialog extends React.Component<IPlayWithDialogProps
   }
 
   private openDialog = async (): Promise<void> => {
-    const testDialog: TestDialog = new TestDialog();
+    const testDialog: TestDialogManager = new TestDialogManager();
     testDialog.context = this.props.context;
     testDialog.cancel = async (): Promise<void> => { 
       console.log('Cancelled');
